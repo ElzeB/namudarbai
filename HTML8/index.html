@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namu darbas HTML8</title>
+</head>
+
+<body>
+
+    <form style="padding: 10px;">
+        <fieldset>
+            <legend>Jūsų informacija</legend>
+                <table>
+                    <tr>
+                        <td><label for="vardas">Vardas:</label></td>
+                        <td><input type="text" name="vardas" id="vardas"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pavarde">Pavardė:</label></td>
+                        <td><input type="text" name="pavarde" id="pavarde"></td>
+                    </tr>
+                </table>
+        </fieldset>
+    </form>
+
+    <form style="padding: 10px;">
+        <fieldset>
+            <legend>Klausimai</legend>
+
+                <div>
+                    <label for="apieMus">Kaip sužinojote apie mus? </label>
+                    <select name="saltiniai" id="apieMus">
+                        <option value="Google">Google</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="Televizija">Televizija</option>
+                        <option value="Pazistamas">Rekomendavo pažįstamas</option>
+                    </select>
+                </div><br>
+
+                <div>
+                    <label for="arApsilankysite">Ar apsilankysite vėl?</label><br>
+                    <input type="radio" name="arApsilankysite" id="arApsilankysite">
+                    <label for="Taip">Taip</label>
+                    <input type="radio" name="Taip" id="Taip">
+                    <label for="Ne">Ne</label>
+                    <input type="radio" name="Ne" id="Ne">
+                    <label for="Galbūt">Galbūt</label>
+                    <input type="radio" name="Galbut" id="Galbūt">
+                </div><br>
+
+                <div>
+                    <label for="nuomone">Ką manote apie kursą?</label><br>
+                    <textarea name="nuomone" id="nuomone" style="width: 70%; height: 150px;" placeholder="Rašykite viską ką galvojate"></textarea>
+                </div><br>
+
+                <div>
+                    <label for="pavarde">Pažymėkite programavimo/žymėjimo kalbas su kuriomis esate susipažinę:</label><br>
+                    <table>
+                    <tr>
+                        <td><input type="checkbox" name="kalba" value="C#">C#</td>
+                        <td><input type="checkbox" name="kalba" value="JAVA">JAVA</td>
+                        <td><input type="checkbox" name="kalba" value="PHP">PHP</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="kalba" value="HTML">HTML</td>
+                        <td><input type="checkbox" name="kalba" value="CSS">CSS</td>
+                        <td><input type="checkbox" name="kalba" value="JavaScript">JavaScript</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="kalba" value="Phyton">Phyton</td>
+                        <td><input type="checkbox" name="kalba" value="Ruby">Ruby</td>
+                    </tr>
+                    </table>
+                </div><br>
+
+                <div>
+                    <input type="Submit" name="siūsti" value="Siūsti">
+                </div>
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
