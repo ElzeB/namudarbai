@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namu darbai JS6</title>
+</head>
+
+<body>
+
+    <h4>Ar galite naršyti svetainėje?</h4>
+    <button type="button" onclick="myFunction()">Pasitikrink</button>
+    <p id="demo"></p>
+
+    <script>
+    function myFunction(){
+        var age_string = prompt("Įveskite savo amžių");
+        var age_int = Number(age_string);
+        if (age_int >= 18) {
+            document.getElementById("demo").innerHTML = "Puiku! Galite užeiti į svetainę!";
+        }
+        else {
+            document.getElementById("demo").innerHTML = "Apgailestaujame! Negalite užeiti į svetainę!";
+        }
+    }
+    </script>
+
+
+</body>
+
+</html>
