@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namu darbas JS5</title>
+</head>
+
+<body>
+
+    <button type="button" onclick="myFunction(pirmasSkaicius, antrasSkaicius)">Dalybos rezultatas</button>
+
+    <p id="rezultatas"></p>
+
+    <script type="text/javascript">
+        //dviejų skaičių dalyba
+
+        var pirmasSkaicius, antrasSkaicius, dalybosRezultatas;
+
+        pirmasSkaicius = 12;
+        antrasSkaicius = 2;
+
+        function myFunction(pirmasSkaicius, antrasSkaicius) {
+
+            dalybosRezultatas = pirmasSkaicius / antrasSkaicius;
+            document.getElementById("rezultatas").innerHTML = dalybosRezultatas;
+
+            alert(dalybosRezultatas);
+
+        }
+
+    </script>
+
+</body>
+
+</html>
