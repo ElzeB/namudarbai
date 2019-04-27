@@ -9,25 +9,25 @@
 
 <body>
 
-    <button type="button" onclick="myFunction(pirmasSkaicius, antrasSkaicius)">Dalybos rezultatas</button>
-
-    <p id="rezultatas"></p>
+    <button type="button" onclick="atvaizdavimas()">Dalybos rezultatas</button>
 
     <script type="text/javascript">
         //dviejų skaičių dalyba
 
         var pirmasSkaicius, antrasSkaicius;
 
+
         pirmasSkaicius = 12;
         antrasSkaicius = 2;
 
+
         function myFunction(pirmasSkaicius, antrasSkaicius) {
+            return pirmasSkaicius / antrasSkaicius;
+        }
 
-            z = pirmasSkaicius / antrasSkaicius;
-
-            document.getElementById("rezultatas").innerHTML =  z;
-            alert(z);
-            console.log(z);
+        function atvaizdavimas() {
+            alert(myFunction(pirmasSkaicius, antrasSkaicius));
+            console.log(myFunction(pirmasSkaicius, antrasSkaicius));
         }
 
     </script>

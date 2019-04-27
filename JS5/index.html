@@ -9,10 +9,6 @@
 
 <body>
 
-    <button type="button" onclick="myFunction(pirmasSkaicius, antrasSkaicius)">Dalybos rezultatas</button>
-
-    <p id="rezultatas"></p>
-
     <script type="text/javascript">
         //dviejų skaičių dalyba
 
@@ -22,13 +18,10 @@
         antrasSkaicius = 2;
 
         function myFunction(pirmasSkaicius, antrasSkaicius) {
-
             dalybosRezultatas = pirmasSkaicius / antrasSkaicius;
-            document.getElementById("rezultatas").innerHTML = dalybosRezultatas;
-
-            alert(dalybosRezultatas);
-
+            console.log(dalybosRezultatas);
         }
+        myFunction(pirmasSkaicius, antrasSkaicius);
 
     </script>
 
