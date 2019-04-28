@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namu darbai CSS4</title>
+
+    <style>
+
+        ul li{
+            display: inline;
+        }
+        .container {
+            position: relative;
+            text-align: center;
+            border: 3px solid black;
+            border-style: double;
+            margin:auto;
+            padding:0px;
+        }
+        .meniu {
+            display: flex;
+            justify-content: space-around;
+        }
+        .body{
+            width: 60%;
+            margin: auto;
+        }
+        .logo{
+             padding: 25px;
+            }
+        .firstHR{
+            border: 1px solid black;
+        }
+        .secondHR {
+            text-align: center;
+        }
+        .description {
+           text-align: center;
+           padding: 25px;
+           font-family: "Courier New", Courier, monospace;
+        }
+        .mainLink {
+            color:#EE3E80;
+            text-decoration: none;
+            font-family: "Courier New", Courier, monospace;
+        }
+        .otherLinks {
+            text-decoration: none;
+            font-family: "Courier New", Courier, monospace;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="body">
+            <div class="logo">
+                <img src="https://github.com/zigmantasvcs/resources/blob/master/page%20task/logo.gif?raw=true" alt="The Analog Specialist">
+            </div>
+
+            <hr class="firstHR">
+            <div>
+                <ul class="meniu">
+                    <li><a class="mainLink" href="">PAGRINDINIS</a></li>
+                    <li><a class="otherLinks" href="">PARDAVIMAS</a></li>
+                    <li><a class="otherLinks" href="">REMONTAS</a></li>
+                    <li><a class="otherLinks" href="">APIE</a></li>
+                    <li><a class="otherLinks" href="">KONTAKTAI</a></li>
+                </ul>
+            </div>
+            <hr class="secondHR">
+
+            <div class="mainPicture">
+                <img src="https://github.com/zigmantasvcs/resources/blob/master/page%20task/keys.jpg?raw=true" alt="keys">
+            </div>
+
+            <div class="description">
+                Mes specializuojamės klasikinių klaviatūrų, ypač "Fender Rhodes", Wurlizer EP200 ir Hohner Clavinet, pardavimų ir taisymu.
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
