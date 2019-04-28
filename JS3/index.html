@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namu darbai JS3</title>
+    <style>
+        table, tr, td{
+            border: 2px solid black;
+        }
+        #lentelesFormatavimas {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <select id="color">
+        <option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+    </select>
+
+    <script>
+
+    var preke = {
+        title: "Nešiojamas kompiuteris",
+        description: "NVIDIA GeForce GTX 1070 grafinis adapteris su Max-Q4 technologija, Intel Core 8th Generation procesorius ir pažangi aušinimo sistema suteikia reikiamą galią, nesvarbu, kur būtumėte.",
+        discount: 30,
+        isItNew: true,
+        color: 0,
+        price: 699.00,
+        currency: "EUR"
+    };
+
+    var lentele = "<table id=lentelesFormatavimas>" + "<tr>" + "<td>" + "Prekė:" + "</td>" + "<td>" + preke.title + "</td>" + "</tr>" + "<tr>" + "<td>" + "Aprašymas:" + "</td>" + "<td>" + preke.description + "</td>" + "</tr>" + "<tr>" + "<td>" + "Nuolaida, %:" + "</td>" + "<td>" + preke.discount + "</td>" + "</tr>" + "<tr>" + "<td>" + "Nauja prekė:" + "</td>" + "<td>" + preke.isItNew + "</td>" + "</tr>" +  "<tr>" + "<td>" + "Spalva:" + "</td>" + "<td>" +  document.getElementById("color") + "</td>" + "</tr>" +  "<tr>" + "<td>" + "Kaina:" + "</td>" + "<td>" + preke.price + "</td>" + "</tr>" + "<tr>" + "<td>" + "Valiuta:" + "</td>" + "<td>" + preke.currency + "</td>" + "</tr>" +"</table>";
+
+
+        document.write (lentele);
+
+
+    </script>
+
+</body>
+
+</html>
