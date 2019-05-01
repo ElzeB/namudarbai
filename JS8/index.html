@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namu darbas JS8</title>
+</head>
+
+<body>
+
+    <main id="info"></main>
+    <h4>Bendras vaikų sąrašas</h4>
+    <p id="demo"></p>
+    <button type="button" onclick="myFunction();">Įvesti neatvykusius</button>
+    <h5>Šios dienos vaikai</h5>
+    <p id = "siosDienosVaikai"></p>
+
+    <script>
+
+        var varduMasyvas = ["Jonas", "Petras", "Martynas", "Ona", "Urtė", "Ema"];
+        var myFunction, insertedValue, rezultatas;
+
+        document.getElementById("demo").innerHTML = varduMasyvas;
+
+            function myFunction() {
+                insertedValue = prompt("Neatvykę vaikai");
+                rezultatas = varduMasyvas.indexOf(insertedValue);
+                    if (rezultatas > -1){
+                        varduMasyvas.splice(rezultatas, 1); document.getElementById("siosDienosVaikai").innerHTML = varduMasyvas;
+                    }
+            }
+
+    </script>
+
+</body>
+
+</html>
