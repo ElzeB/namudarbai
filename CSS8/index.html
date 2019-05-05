@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namu darbas CSS8</title>
+
+    <style>
+
+        #flex-container-geltonas {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            width: 650px;
+            background-color: #FFF6A3;
+            padding: 15px;
+        }
+
+        #flex-container-zalias {
+            display: flex;
+            justify-content: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            width: 650px;
+            background-color: #C2FFBD;
+            padding: 15px;
+        }
+
+        #registracijos-forma {
+            justify-content: flex-start;
+        }
+
+        #kvietimo-tekstas {
+            justify-content: flex-start;
+        }
+        #lentele {
+            border: 1px solid black;
+        }
+        #ivesties-laukai {
+            width: 75%;
+        }
+
+        .button {
+            width: 100%;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        #text {
+            width: 100%;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1>Registracija į renginį</h1>
+        <div id = "flex-container-geltonas">
+        <div id = registracijos-forma>
+            <h2>Registracijos forma</h2>
+        </div>
+            <div id = "kvietimo-tekstas">
+                <p> Jeigu norite užsiregistsruoti į renginį, užpildykite žemiau esančią formą. Žemiau lentelėje galite matyti jau užsiregistravusius dalyvius </p>
+            </div>
+                <table id = "ivesties-laukai">
+                     <tr>
+                       <td>Vardas</td>
+                       <td><input id="text" type = "text"></td>
+                     </tr>
+                    <tr>
+                       <td>Pavardė</td>
+                       <td><input id="text" type = "text"></td>
+                     </tr>
+                      <tr>
+                        <td>Elektroninis paštas</td>
+                        <td><input id="text" type = "text"></td>
+                     </tr>
+                     <tr>
+                       <td colspan="2"><button class = "button" type="submit">Registruoti</button></td>
+                     </tr>
+                </table>
+        </div>
+    <div id = "flex-container-zalias">
+                <div id = dalyviu-sarasas>
+                    <h2>Jau užsiregistravę dalyviai:</h2>
+                </div>
+                <table id="lentele">
+                    <tr>
+                        <td>Vardas</td>
+                        <td>Pavardė</td>
+                        <td>Elektroninis paštas</td>
+                    </tr>
+                    <tr>
+                        <td>Jonas</td>
+                        <td>Jonaitis</td>
+                        <td>jonaitis@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Petras</td>
+                        <td>Petraitis</td>
+                        <td>petraitis@gmail.com</td>
+                    </tr>
+                </table>
+
+      </div>
+
+
+</body>
+</html>
