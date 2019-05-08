@@ -11,16 +11,30 @@
 <?php
 
     $temp = [4, 3, 9, 19, 19, 9, 12, 20, 24, 20, 12, 14, 18, 21, 20, 23, 16, 16, 15, 19, 19, 17, 17, 15, 12, 13, 13, 15, 19, 21];
-    $dienu_skaicius = count($temp);//30
-    $tem_suma = array_sum($temp);//474
-    $tem_vid = round ($tem_suma/$dienu_skaicius);
-    echo "Vidutinė mėnesio temperatūra $tem_vid";
+
+    $dienu_skaicius_int = count($temp);//30
+    $tem_suma_int = array_sum($temp);//474
+    $tem_vid_int = round ($tem_suma_int/$dienu_skaicius_int);
+    //print_r($tem_vid_int);//
+    echo "Vidutinė mėnesio temperatūra $tem_vid_int";
 
     echo '<br>';
 
+    rsort($temp);
+    //print_r($temp);//
+    $penki_šilčiausi_array = array_slice($temp, 0, 5);
+   //print_r($penki_šilčiausi_array);//
+    $penki_šalčiausi_array = array_slice($temp, -5, 5);
+    //print_r($penki_šalčiausi_array);//
 
-   $šilčiausios_temp = asort($temp);
-   echo $šilčiausios_temp;
+     echo '<br>';
+
+     echo 'Penkios šilčiausios balandžio mėn temp. ' . implode(' ', $penki_šilčiausi_array);
+
+     echo '<br>';
+
+     echo 'Penkios šalčiausios balandžio mėn temp. ' . implode(' ', $penki_šalčiausi_array);
+
 ?>
 
 </body>
